@@ -1,0 +1,35 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Static App Shortcut for ChatbotActivity -->
+    <shortcut
+        android:shortcutId="chatbot_shortcut"
+        android:enabled="true"
+        android:icon="@drawable/ic_chatbot_icon"
+        android:shortcutShortLabel="@string/shortcut_short_label_chatbot"
+        android:shortcutLongLabel="@string/shortcut_long_label_chatbot"
+        android:shortcutDisabledMessage="@string/shortcut_disabled_message_chatbot">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.app.collegeadmissionapp"
+            android:targetClass="com.app.collegeadmissionapp.ui.ShortcutRouterActivity">
+            <extra android:name="shortcut_id" android:value="chatbot"/>
+        </intent>
+
+
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="news_shortcut"
+        android:enabled="true"
+        android:icon="@drawable/ic_news_icon"
+        android:shortcutShortLabel="@string/shortcut_short_label_news"
+        android:shortcutLongLabel="@string/shortcut_long_label_news">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.app.collegeadmissionapp"
+            android:targetClass="com.app.collegeadmissionapp.ui.ShortcutRouterActivity">
+            <extra android:name="shortcut_id" android:value="news"/>
+        </intent>
+    </shortcut>
+</shortcuts>
